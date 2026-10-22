@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Beranda - SIGAP 60</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#000B58',
+            darkblue: '#003161',
+            teal: '#006A67',
+            cream: '#FFF4B7',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      background-color: #000B58;
+      color: #FFFFFF;
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+<meta content="web_standard" name="shell-type"/></head>
+<body class="min-h-screen bg-[#000B58] text-white flex flex-col justify-between selection:bg-[#006A67] selection:text-[#FFF4B7]">
+<!-- Top Navigation Bar (Strict Palette & Clean Line Layout) -->
+<header class="w-full bg-[#000B58] border-b border-[#003161]/60 sticky top-0 z-50">
+<div class="max-w-[1200px] mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-[#003161] border border-[#006A67] flex items-center justify-center text-[#FFF4B7]">
+<!-- Shield with Clock Line Icon -->
+<svg class="w-5 h-5 text-[#FFF4B7]" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M12 8v4l2.5 2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div>
+<span class="text-xl font-bold tracking-tight text-[#FFF4B7]">SIGAP 60</span>
+</div>
+</div>
+<!-- Menu Links -->
+<nav class="flex items-center gap-8">
+<a class="text-[#FFF4B7] font-semibold text-sm border-b-2 border-[#FFF4B7] pb-1 transition-colors" href="#">Beranda</a>
+<a class="text-white/80 hover:text-[#FFF4B7] font-medium text-sm transition-colors" href="#">Protokol</a>
+<a class="text-white/80 hover:text-[#FFF4B7] font-medium text-sm transition-colors" href="#">Pos</a>
+<a class="text-white/80 hover:text-[#FFF4B7] font-medium text-sm transition-colors" href="#">Latihan</a>
+<a class="text-white/80 hover:text-[#FFF4B7] font-medium text-sm transition-colors" href="#">Data</a>
+</nav>
+</div>
+</header>
+<!-- Main Content Area (Max width 1200px, 12-column grid layout) -->
+<main class="w-full max-w-[1200px] mx-auto px-6 py-12 flex-1 flex flex-col gap-14"><div class="flex flex-col w-full">
+<!-- Top Section / Sticky Golden Hour Status Hero Banner -->
+<section class="w-full bg-[#003161] rounded-2xl p-6 lg:p-8 mb-10 shadow-xl relative overflow-hidden">
+<div class="absolute -right-16 -top-16 w-72 h-72 rounded-full bg-[#006A67]/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -bottom-20 w-60 h-60 rounded-full bg-[#FFF4B7]/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+<!-- Left Info: Context & Heading -->
+<div class="flex-1 max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#006A67] text-[#FFF4B7] font-label-md text-label-md mb-4 tracking-wider uppercase">
+<span class="material-symbols-outlined text-[16px]">timer</span>
+          GOLDEN HOUR REKENING : Batas Krusial Pembekuan Transaksi
+        </div>
+<h1 class="font-headline-lg text-headline-lg text-[#FFF4B7] tracking-tight mb-3">
+          Protokol Tanggap 60 Menit
+        </h1>
+<p class="font-body-md text-body-md text-white/90 leading-relaxed mb-6">
+          Lakukan 4 tindakan darurat ini secepatnya sebelum dana penipu dialihkan ke multi-rekening jaringan pencucian uang. Setiap menit menentukan keberhasilan penahanan saldo keluar.
+        </p>
+<!-- Progress Overview Tracker -->
+<div class="bg-[#000B58]/60 p-4 rounded-xl">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-lg text-label-lg text-white font-semibold">Status Tindakan Darurat</span>
+<span class="font-label-md text-label-md text-[#FFF4B7] font-bold" id="progress-text">1 dari 4 Selesai (25%)</span>
+</div>
+<div class="w-full h-3 bg-[#003161] rounded-full overflow-hidden">
+<div class="h-full bg-[#006A67] rounded-full transition-all duration-500 ease-out" id="progress-bar-fill" style="width: 25%;"></div>
+</div>
+<p class="font-label-sm text-label-sm text-white/70 mt-2">
+            Prioritas Saat Ini: <span class="text-[#FFF4B7] font-semibold">Tindakan Primer Bank &amp; Rekening Tujuan</span>
+</p>
+</div>
+</div>
+<!-- Right Visual: The Golden 60 Countdown Ring Card -->
+<div class="flex flex-col sm:flex-row lg:flex-col items-center justify-center bg-[#000B58] p-6 rounded-2xl min-w-[280px] text-center shadow-lg">
+<div class="relative w-36 h-36 flex items-center justify-center mb-3">
+<!-- Circular Progress Ring SVG -->
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 120 120">
+<circle cx="60" cy="60" fill="transparent" r="50" stroke="#003161" stroke-width="8"></circle>
+<circle cx="60" cy="60" fill="transparent" r="50" stroke="#FFF4B7" stroke-dasharray="314.16" stroke-dashoffset="42" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-headline-xl text-headline-xl text-[#FFF4B7] tracking-tight leading-none" id="countdown-val">52:10</span>
+<span class="font-label-sm text-label-sm text-white/80 uppercase tracking-widest mt-1">SISA WAKTU</span>
+</div>
+</div>
+<div>
+<span class="font-label-lg text-label-lg text-[#FFF4B7] block">Sisa 52:10</span>
+<span class="font-body-sm text-body-sm text-white/80">Menit Pertama Penyelamatan Saldo</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Body Grid: 12-Column Desktop Architecture -->
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- LEFT COLUMN (7 Cols): The 4-Step Operational Checklist -->
+<section class="lg:col-span-7 flex flex-col gap-6">
+<div class="flex items-center justify-between pb-2">
+<h2 class="font-headline-md text-headline-md text-[#FFF4B7] flex items-center gap-2">
+<span class="material-symbols-outlined text-[#006A67]">shield</span>
+          Alur Penyelamatan Saldo Mahasiswa
+        </h2>
+<span class="font-label-sm text-label-sm text-white/80 bg-[#003161] px-3 py-1 rounded-md uppercase tracking-wider">
+          Protokol Siaga 1
+        </span>
+</div>
+<!-- Step 01: Hubungi Bank (Active Priority) -->
+<article class="bg-[#003161] rounded-2xl p-6 shadow-md transition-all relative overflow-hidden" id="step-card-1">
+<div class="flex items-start justify-between gap-4 mb-4">
+<div class="flex items-center gap-3">
+<span class="w-10 h-10 rounded-xl bg-[#000B58] text-[#FFF4B7] font-headline-sm text-headline-sm flex items-center justify-center font-bold">
+              01
+            </span>
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded bg-[#006A67] text-[#FFF4B7] font-label-sm text-label-sm font-bold uppercase">
+                  TINDAKAN PRIMER
+                </span>
+<span class="px-2 py-0.5 rounded bg-[#006A67]/40 text-white font-label-sm text-label-sm" id="step-badge-1">
+                  Selesai
+                </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-white mt-1">
+                Hubungi bank atau e-wallet pengirim &amp; penerima
+              </h3>
+</div>
+</div>
+<!-- Toggle Action -->
+<button class="px-4 py-2 rounded-xl bg-[#006A67] text-[#FFF4B7] font-label-md text-label-md flex items-center gap-1.5 transition-colors" id="step-btn-1" onclick="toggleStep(1)">
+<span class="material-symbols-outlined text-[18px]" id="step-icon-1">check_circle</span>
+<span id="step-text-1">Selesai</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-white/90 mb-5 pl-13">
+          Minta penundaan transaksi seketika dan sebutkan secara tegas nomor rekening tujuan penipu. Informasikan bahwa transaksi terindikasi tindak pidana rekayasa sosial / penipuan siber.
+        </p>
+<!-- Call Center Hotline Shortcuts Matrix -->
+<div class="bg-[#000B58] rounded-xl p-4">
+<span class="font-label-sm text-label-sm text-white/70 uppercase tracking-wider block mb-3">
+            Panggil Cepat Call Center Resmi (Bebas Biaya Pulsa Darurat):
+          </span>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+<a class="flex flex-col items-center justify-center p-3 rounded-lg bg-[#003161] hover:bg-[#006A67] transition-all group" href="tel:14017">
+<span class="font-label-lg text-label-lg text-[#FFF4B7] group-hover:text-white">BRI</span>
+<span class="font-label-md text-label-md text-white font-bold tracking-wider mt-0.5">14017</span>
+</a>
+<a class="flex flex-col items-center justify-center p-3 rounded-lg bg-[#003161] hover:bg-[#006A67] transition-all group" href="tel:1500888">
+<span class="font-label-lg text-label-lg text-[#FFF4B7] group-hover:text-white">BCA</span>
+<span class="font-label-md text-label-md text-white font-bold tracking-wider mt-0.5">1500888</span>
+</a>
+<a class="flex flex-col items-center justify-center p-3 rounded-lg bg-[#003161] hover:bg-[#006A67] transition-all group" href="tel:14000">
+<span class="font-label-lg text-label-lg text-[#FFF4B7] group-hover:text-white">Mandiri</span>
+<span class="font-label-md text-label-md text-white font-bold tracking-wider mt-0.5">14000</span>
+</a>
+<a class="flex flex-col items-center justify-center p-3 rounded-lg bg-[#003161] hover:bg-[#006A67] transition-all group" href="tel:1500046">
+<span class="font-label-lg text-label-lg text-[#FFF4B7] group-hover:text-white">BNI</span>
+<span class="font-label-md text-label-md text-white font-bold tracking-wider mt-0.5">1500046</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Step 02: Lapor di IASC OJK -->
+<article class="bg-[#003161] rounded-2xl p-6 shadow-md transition-all relative" id="step-card-2">
+<div class="flex items-start justify-between gap-4 mb-4">
+<div class="flex items-center gap-3">
+<span class="w-10 h-10 rounded-xl bg-[#000B58] text-[#FFF4B7] font-headline-sm text-headline-sm flex items-center justify-center font-bold">
+              02
+            </span>
+<div>
+<span class="px-2 py-0.5 rounded bg-[#000B58] text-[#FFF4B7] font-label-sm text-label-sm font-semibold uppercase">
+                PORTAL RESMI OJK
+              </span>
+<h3 class="font-headline-sm text-headline-sm text-white mt-1">
+                Lapor di iasc.ojk.go.id (Anti-Scam Center)
+              </h3>
+</div>
+</div>
+<!-- Toggle Action -->
+<button class="px-4 py-2 rounded-xl bg-[#000B58] text-[#FFF4B7] hover:bg-[#006A67] font-label-md text-label-md flex items-center gap-1.5 transition-colors" id="step-btn-2" onclick="toggleStep(2)">
+<span class="material-symbols-outlined text-[18px]" id="step-icon-2">radio_button_unchecked</span>
+<span id="step-text-2">Tandai Selesai</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-white/90 mb-5">
+          Isi laporan lewat situs resmi Satgas PASTI / IASC OJK. Pastikan URL peramban adalah persis <code class="bg-[#000B58] text-[#FFF4B7] px-2 py-0.5 rounded font-mono">iasc.ojk.go.id</code> untuk menghindari situs tiruan / phishing baru.
+        </p>
+<div class="flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#FFF4B7] text-[#000B58] hover:bg-white font-label-lg text-label-lg transition-colors font-bold shadow-md" href="https://iasc.ojk.go.id" rel="noopener noreferrer" target="_blank">
+<span>Kunjungi iasc.ojk.go.id</span>
+<span class="material-symbols-outlined text-[20px]">open_in_new</span>
+</a>
+<span class="font-label-sm text-label-sm text-white/70">
+            Perlu waktu ± 4 menit untuk melengkapi data rekening tujuan.
+          </span>
+</div>
+</article>
+<!-- Step 03: Simpan Bukti (Checklist) -->
+<article class="bg-[#003161] rounded-2xl p-6 shadow-md transition-all relative" id="step-card-3">
+<div class="flex items-start justify-between gap-4 mb-4">
+<div class="flex items-center gap-3">
+<span class="w-10 h-10 rounded-xl bg-[#000B58] text-[#FFF4B7] font-headline-sm text-headline-sm flex items-center justify-center font-bold">
+              03
+            </span>
+<div>
+<span class="px-2.5 py-0.5 rounded bg-[#006A67] text-[#FFF4B7] font-label-sm text-label-sm font-bold uppercase">
+                DOKUMENTASI LEGAL
+              </span>
+<h3 class="font-headline-sm text-headline-sm text-white mt-1">
+                Amankan &amp; Simpan Barang Bukti Digital
+              </h3>
+</div>
+</div>
+<!-- Toggle Action -->
+<button class="px-4 py-2 rounded-xl bg-[#000B58] text-[#FFF4B7] hover:bg-[#006A67] font-label-md text-label-md flex items-center gap-1.5 transition-colors" id="step-btn-3" onclick="toggleStep(3)">
+<span class="material-symbols-outlined text-[18px]" id="step-icon-3">radio_button_unchecked</span>
+<span id="step-text-3">Tandai Selesai</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-white/90 mb-4">
+          Tangkapan layar mutasi transaksi, chat utuh sebelum dihapus sepihak, dan nomor kontak/rekening pelaku. Jangan hapus aplikasi penipu sebelum mengambil log riwayat.
+        </p>
+<!-- Sub-Checklist Interactive Items -->
+<div class="bg-[#000B58] rounded-xl p-4 flex flex-col gap-3">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="w-5 h-5 rounded accent-[#006A67] bg-[#003161] cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-white group-hover:text-[#FFF4B7] transition-colors">
+              Tangkapan layar mutasi bank / resi transfer lengkap dengan nomor referensi unik.
+            </span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-5 h-5 rounded accent-[#006A67] bg-[#003161] cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-white group-hover:text-[#FFF4B7] transition-colors">
+              Tangkapan layar chat WhatsApp / Telegram tanpa dipotong (sertakan nomor telepon profil).
+            </span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-5 h-5 rounded accent-[#006A67] bg-[#003161] cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-white group-hover:text-[#FFF4B7] transition-colors">
+              Log riwayat panggilan, tautan APK, atau nama file unduhan yang mencurigakan.
+            </span>
+</label>
+</div>
+</article>
+<!-- Step 04: Kontak OJK 157 -->
+<article class="bg-[#003161] rounded-2xl p-6 shadow-md transition-all relative" id="step-card-4">
+<div class="flex items-start justify-between gap-4 mb-4">
+<div class="flex items-center gap-3">
+<span class="w-10 h-10 rounded-xl bg-[#000B58] text-[#FFF4B7] font-headline-sm text-headline-sm flex items-center justify-center font-bold">
+              04
+            </span>
+<div>
+<span class="px-2 py-0.5 rounded bg-[#000B58] text-[#FFF4B7] font-label-sm text-label-sm font-semibold uppercase">
+                KONSULTASI KONSUMEN
+              </span>
+<h3 class="font-headline-sm text-headline-sm text-white mt-1">
+                Hubungi Kontak OJK 157
+              </h3>
+</div>
+</div>
+<!-- Toggle Action -->
+<button class="px-4 py-2 rounded-xl bg-[#000B58] text-[#FFF4B7] hover:bg-[#006A67] font-label-md text-label-md flex items-center gap-1.5 transition-colors" id="step-btn-4" onclick="toggleStep(4)">
+<span class="material-symbols-outlined text-[18px]" id="step-icon-4">radio_button_unchecked</span>
+<span id="step-text-4">Tandai Selesai</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-white/90 mb-5">
+          Telepon 157 untuk konsultasi lanjutan, verifikasi status entitas legalitas penyelenggara, dan penanganan sengketa pengaduan konsumen jasa keuangan terpadu.
+        </p>
+<div class="flex flex-wrap items-center gap-3">
+<a class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#006A67] text-[#FFF4B7] hover:bg-[#FFF4B7] hover:text-[#000B58] font-label-lg text-label-lg transition-all font-bold" href="tel:157">
+<span class="material-symbols-outlined text-[20px]">phone_in_talk</span>
+<span>Telepon Kontak 157</span>
+</a>
+<a class="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-[#000B58] text-white hover:text-[#FFF4B7] font-label-md text-label-md transition-all" href="https://wa.me/6281157157157" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>WhatsApp Resmi OJK (081-157-157-157)</span>
+</a>
+</div>
+</article>
+</section>
+<!-- RIGHT COLUMN (5 Cols): Supporting Actions, Security Caution & Peer Solidarity -->
+<aside class="lg:col-span-5 flex flex-col gap-6 lg:sticky lg:top-28">
+<!-- Cream Warning Box (Mandatory Alert Styling) -->
+<div class="w-full bg-[#FFF4B7] text-[#000B58] rounded-2xl p-6 shadow-xl relative overflow-hidden">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[#000B58] text-[28px] shrink-0 mt-0.5 font-bold">
+            warning
+          </span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-[#000B58] font-bold uppercase tracking-tight mb-2">
+              PERINGATAN KEAMANAN KRUSIAL
+            </h4>
+<p class="font-body-md text-body-md text-[#000B58] font-semibold leading-relaxed">
+              Jangan pernah membagikan kata sandi, PIN, atau kode OTP kepada siapa pun, termasuk pendamping sebaya atau pihak mana pun yang mengaku sebagai petugas bank atau aparat keamanan.
+            </p>
+</div>
+</div>
+</div>
+<!-- Quick Incident Summary Generator / Copy Script for CS Bank -->
+<div class="w-full bg-[#003161] rounded-2xl p-6 shadow-md">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#FFF4B7] text-[20px]">description</span>
+<h4 class="font-headline-sm text-headline-sm text-[#FFF4B7]">
+              Draf Laporan Cepat CS Bank
+            </h4>
+</div>
+<span class="font-label-sm text-label-sm bg-[#000B58] text-white/80 px-2 py-1 rounded">
+            Format Resmi
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-white/80 mb-4">
+          Bacakan atau salin teks ini saat terhubung dengan Customer Service Bank untuk mempercepat pemblokiran:
+        </p>
+<div class="bg-[#000B58] rounded-xl p-4 font-mono text-white/90 text-xs leading-relaxed mb-4 select-all relative group" id="report-draft">
+          "Halo Petugas, saya melaporkan transaksi mencurigakan dugaan tindak pidana penipuan pada [WAKTU]. Mohon segera dilakukan pemblokiran/penundaan transaksi pada rekening tujuan [NAMA BANK] No. Rekening [NOMOR REKENING PELAKU] atas nama [NAMA PELAKU] sebesar Rp [NOMINAL]. Bukti transaksi lengkap sudah saya amankan."
+        </div>
+<button class="w-full py-3 rounded-xl bg-[#006A67] text-[#FFF4B7] hover:bg-[#FFF4B7] hover:text-[#000B58] font-label-lg text-label-lg flex items-center justify-center gap-2 transition-all font-bold" id="copy-btn" onclick="copyDraft()">
+<span class="material-symbols-outlined text-[18px]" id="copy-icon">content_copy</span>
+<span id="copy-text">Salin Draf Laporan</span>
+</button>
+</div>
+<!-- Peer Assistance Companion CTA Card (Solidarity & Bela Negara) -->
+<div class="w-full bg-[#003161] rounded-2xl p-6 shadow-md relative overflow-hidden">
+<div class="flex items-start gap-4 mb-4">
+<div class="w-12 h-12 rounded-xl bg-[#006A67] text-[#FFF4B7] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">groups</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-[#FFF4B7] uppercase tracking-wider font-semibold">
+              SOLIDARITAS KAMPUS
+            </span>
+<h4 class="font-headline-sm text-headline-sm text-white mt-0.5">
+              Minta Pendamping Sebaya Kampus
+            </h4>
+</div>
+</div>
+<p class="font-body-md text-body-md text-white/90 leading-relaxed mb-5">
+          Relawan mahasiswa terlatih Bela Negara siap mendampingi pelaporan ke bank &amp; posko kampus terdekat (100% Bebas Biaya &amp; Nir-Akses Sandi).
+        </p>
+<div class="flex flex-col gap-3">
+<a class="w-full py-3.5 px-4 rounded-xl bg-[#FFF4B7] text-[#000B58] hover:bg-white font-label-lg text-label-lg text-center font-bold transition-colors shadow-md flex items-center justify-center gap-2" href="#">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+<span>Hubungi Posko Pendamping Terdekat</span>
+</a>
+<div class="flex items-center justify-center gap-4 text-white/70 font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-[#006A67]"></span> 48 Relawan Aktif
+            </span>
+<span>•</span>
+<span>Privasi Terjaga Penuh</span>
+</div>
+</div>
+</div>
+<!-- Campus Peer Network Badge Info -->
+<div class="bg-[#000B58] rounded-xl p-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-[#FFF4B7] text-[22px]">policy</span>
+<p class="font-body-sm text-body-sm text-white/80">
+          Setiap pelaporan yang dituntaskan dalam 60 menit meningkatkan potensi penyelamatan saldo hingga 78%.
+        </p>
+</div>
+</aside>
+</div>
+<!-- Legal & Regulatory Reassurance Section -->
+<section class="w-full mt-12 pt-6 border-t border-[#003161]/60 flex flex-col md:flex-row items-start justify-between gap-4 text-white/70">
+<div class="max-w-2xl">
+<p class="font-body-sm text-body-sm leading-relaxed">
+        Platform tanggap darurat sivitas akademika. Seluruh data insiden diamankan secara terdesentralisasi sesuai prinsip UU Perlindungan Data Pribadi (UU PDP No. 27/2022).
+      </p>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-[#FFF4B7] tracking-wider uppercase block">
+        Bela Negara Digital • Sinergi Mahasiswa
+      </span>
+</div>
+</section>
+<!-- Interactive State Logic -->
+<script>
+    const stepStates = {
+      1: true,
+      2: false,
+      3: false,
+      4: false
+    };
+
+    function updateProgress() {
+      const completedCount = Object.values(stepStates).filter(Boolean).length;
+      const percent = (completedCount / 4) * 100;
+      
+      const barFill = document.getElementById('progress-bar-fill');
+      const textElem = document.getElementById('progress-text');
+      
+      if (barFill && textElem) {
+        barFill.style.width = percent + '%';
+        textElem.textContent = completedCount + ' dari 4 Selesai (' + percent + '%)';
+      }
+    }
+
+    function toggleStep(stepNumber) {
+      stepStates[stepNumber] = !stepStates[stepNumber];
+      const isDone = stepStates[stepNumber];
+      
+      const btn = document.getElementById('step-btn-' + stepNumber);
+      const icon = document.getElementById('step-icon-' + stepNumber);
+      const text = document.getElementById('step-text-' + stepNumber);
+      const card = document.getElementById('step-card-' + stepNumber);
+      
+      if (isDone) {
+        btn.classList.remove('bg-[#000B58]');
+        btn.classList.add('bg-[#006A67]');
+        icon.textContent = 'check_circle';
+        text.textContent = 'Selesai';
+        card.classList.add('ring-1', 'ring-[#006A67]');
+      } else {
+        btn.classList.remove('bg-[#006A67]');
+        btn.classList.add('bg-[#000B58]');
+        icon.textContent = 'radio_button_unchecked';
+        text.textContent = 'Tandai Selesai';
+        card.classList.remove('ring-1', 'ring-[#006A67]');
+      }
+      
+      updateProgress();
+    }
+
+    function copyDraft() {
+      const draftText = document.getElementById('report-draft').innerText;
+      navigator.clipboard.writeText(draftText).then(() => {
+        const copyBtnText = document.getElementById('copy-text');
+        const copyIcon = document.getElementById('copy-icon');
+        copyBtnText.textContent = 'Draf Berhasil Disalin!';
+        copyIcon.textContent = 'done_all';
+        setTimeout(() => {
+          copyBtnText.textContent = 'Salin Draf Laporan';
+          copyIcon.textContent = 'content_copy';
+        }, 3000);
+      });
+    }
+
+    // Gentle countdown decreaser simulation
+    let totalSeconds = 52 * 60 + 10;
+    const countdownElem = document.getElementById('countdown-val');
+    setInterval(() => {
+      if (totalSeconds > 0) {
+        totalSeconds--;
+        const m = Math.floor(totalSeconds / 60).toString().padStart(2, '0');
+        const s = (totalSeconds % 60).toString().padStart(2, '0');
+        if (countdownElem) {
+          countdownElem.textContent = m + ':' + s;
+        }
+      }
+    }, 1000);
+  </script>
+</div></main>
+<!-- Footer -->
+<footer class="w-full bg-[#000B58] border-t border-[#003161]/60 py-8">
+<div class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+<!-- Legal disclaimer requested -->
+<p class="text-xs text-white/80">
+        SIGAP 60 hanya memandu. Keputusan pemblokiran ada di bank dan OJK.
+      </p>
+<!-- Mandatory note requested -->
+<p class="text-xs text-[#FFF4B7]/80">
+        Bukan situs resmi OJK/IASC.
+      </p>
+</div>
+</footer>
+</body></html>

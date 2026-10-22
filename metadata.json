@@ -1,0 +1,6 @@
+{
+  "name": "SIGAP 60",
+  "description": "Jam pertama menentukan. Teman sebaya yang menemanimu melapor penipuan digital dalam 60 menit lewat jalur resmi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

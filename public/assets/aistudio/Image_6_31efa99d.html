@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Beranda - SIGAP 60</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#000B58',
+            darkblue: '#003161',
+            teal: '#006A67',
+            cream: '#FFF4B7',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      background-color: #000B58;
+      color: #FFFFFF;
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+<meta content="web_standard" name="shell-type"/></head>
+<body class="min-h-screen bg-[#000B58] text-white flex flex-col justify-between selection:bg-[#006A67] selection:text-[#FFF4B7]">
+<!-- Top Navigation Bar (Strict Palette & Clean Line Layout) -->
+<header class="w-full bg-[#000B58] border-b border-[#003161]/60 sticky top-0 z-50">
+<div class="max-w-[1200px] mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-[#003161] border border-[#006A67] flex items-center justify-center text-[#FFF4B7]">
+<!-- Shield with Clock Line Icon -->
+<svg class="w-5 h-5 text-[#FFF4B7]" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M12 8v4l2.5 2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div>
+<span class="text-xl font-bold tracking-tight text-[#FFF4B7]">SIGAP 60</span>
+</div>
+</div>
+<!-- Menu Links -->
+<nav class="flex items-center gap-8">
+<a class="text-[#FFF4B7] font-semibold text-sm border-b-2 border-[#FFF4B7] pb-1 transition-colors" href="#">Beranda</a>
+<a class="text-white/80 hover:text-[#FFF4B7] font-medium text-sm transition-colors" href="#">Protokol</a>
+<a class="text-white/80 hover:text-[#FFF4B7] font-medium text-sm transition-colors" href="#">Pos</a>
+<a class="text-white/80 hover:text-[#FFF4B7] font-medium text-sm transition-colors" href="#">Latihan</a>
+<a class="text-white/80 hover:text-[#FFF4B7] font-medium text-sm transition-colors" href="#">Data</a>
+</nav>
+</div>
+</header>
+<!-- Main Content Area (Max width 1200px, 12-column grid layout) -->
+<main class="w-full max-w-[1200px] mx-auto px-6 py-12 flex-1 flex flex-col gap-14"><div class="flex flex-col w-full">
+<!-- Interactive Navigation Sync Script for App Shell -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navLinks = document.querySelectorAll("header nav a");
+      navLinks.forEach((link) => {
+        if (link.textContent.trim().toLowerCase() === "pos") {
+          link.className = "text-[#FFF4B7] font-semibold text-sm border-b-2 border-[#FFF4B7] pb-1 transition-colors";
+        } else if (link.textContent.trim().toLowerCase() === "beranda") {
+          link.className = "text-white/80 hover:text-[#FFF4B7] font-medium text-sm transition-colors";
+        }
+      });
+    });
+  </script>
+<!-- Hero Section -->
+<section class="flex flex-col gap-6 relative">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-4">
+<div class="flex flex-col gap-3 max-w-3xl">
+<div class="inline-flex items-center gap-2 self-start bg-secondary-container/40 px-3.5 py-1.5 rounded-lg border border-tertiary/20">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-md text-label-md tracking-wider uppercase text-on-surface">SOLIDARITAS SIVITAS AKADEMIKA • RADAR AKTIF</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Pos Pendamping Kampus</h1>
+<p class="font-body-lg text-body-lg text-white/90">
+          Mahasiswa terlatih yang memandu, tanpa memegang uang atau akunmu.
+        </p>
+</div>
+<!-- Stat Badge Pill -->
+<div class="inline-flex items-center gap-3 bg-secondary-container px-5 py-3 rounded-2xl self-start md:self-end">
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface">31 Relawan Aktif</span>
+<span class="text-xs bg-tertiary-container text-tertiary px-1.5 py-0.5 rounded font-bold">Terverifikasi</span>
+</div>
+<span class="font-body-sm text-body-sm text-white/70">Siaga dalam radius 5 km sekitarmu</span>
+</div>
+</div>
+</div>
+<!-- Search & Filter Controls -->
+<div class="flex flex-col gap-4 bg-secondary-container/60 p-4 rounded-2xl">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full pl-12 pr-4 py-3.5 bg-primary-container rounded-xl text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-on-surface" placeholder="Cari kampus, fakultas, atau pos..." type="text"/>
+</div>
+<!-- Category Filter Chips -->
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<button class="px-4 py-2 rounded-xl font-label-md text-label-md bg-tertiary-container text-on-surface shadow-sm transition-all hover:brightness-110">
+          Semua Pos (4)
+        </button>
+<button class="px-4 py-2 rounded-xl font-label-md text-label-md bg-primary-container/80 text-white/80 hover:text-on-surface hover:bg-primary-container transition-all">
+          Menwa &amp; Bela Diri
+        </button>
+<button class="px-4 py-2 rounded-xl font-label-md text-label-md bg-primary-container/80 text-white/80 hover:text-on-surface hover:bg-primary-container transition-all">
+          Advokasi BEM FT
+        </button>
+<button class="px-4 py-2 rounded-xl font-label-md text-label-md bg-primary-container/80 text-white/80 hover:text-on-surface hover:bg-primary-container transition-all">
+          Biro Kesejahteraan
+        </button>
+<button class="px-4 py-2 rounded-xl font-label-md text-label-md bg-primary-container/80 text-white/80 hover:text-on-surface hover:bg-primary-container transition-all">
+          Siber &amp; IT
+        </button>
+</div>
+</div>
+</section>
+<!-- Grid of 4 Campus Volunteer Posts -->
+<section class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Card 1 -->
+<div class="flex flex-col justify-between bg-secondary-container p-6 rounded-2xl relative overflow-hidden group hover:shadow-xl transition-all">
+<div class="flex flex-col gap-4">
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-center gap-3.5">
+<div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[26px]">military_tech</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Pos SIGAP UKM Menwa</h2>
+<span class="font-body-sm text-body-sm text-white/70">Kampus Nusantara - Contoh</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-md font-label-sm text-label-sm uppercase bg-on-surface text-primary-container shrink-0">
+            AKTIF SEKARANG
+          </span>
+</div>
+<div class="flex items-center gap-2 font-label-md text-label-md text-tertiary">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<span>~1,2 km</span>
+<span class="text-white/40">•</span>
+<span class="material-symbols-outlined text-[18px]">group</span>
+<span>8 Pendamping Siaga</span>
+</div>
+<div class="bg-primary-container/70 p-3.5 rounded-xl">
+<span class="font-label-sm text-label-sm text-white/60 block uppercase mb-1">Spesialisasi Dukungan</span>
+<p class="font-body-md text-body-md text-white/95">
+            Triage darurat jam pertama &amp; pendampingan panggilan bank darurat.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-3 mt-6 pt-2">
+<button class="flex-1 h-[48px] rounded-xl font-label-lg text-label-lg bg-tertiary-container text-on-surface flex items-center justify-center gap-2 hover:brightness-110 transition-all">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Chat Relawan</span>
+</button>
+<button class="flex-1 h-[48px] rounded-xl font-label-lg text-label-lg bg-primary-container text-on-surface flex items-center justify-center gap-2 hover:bg-primary-container/80 transition-all">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span>Telepon Pos</span>
+</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col justify-between bg-secondary-container p-6 rounded-2xl relative overflow-hidden group hover:shadow-xl transition-all">
+<div class="flex flex-col gap-4">
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-center gap-3.5">
+<div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[26px]">shield</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Advokasi Siber BEM FT</h2>
+<span class="font-body-sm text-body-sm text-white/70">Fakultas Teknik - Contoh</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-md font-label-sm text-label-sm uppercase bg-on-surface text-primary-container shrink-0">
+            AKTIF SEKARANG
+          </span>
+</div>
+<div class="flex items-center gap-2 font-label-md text-label-md text-tertiary">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<span>~2,5 km</span>
+<span class="text-white/40">•</span>
+<span class="material-symbols-outlined text-[18px]">group</span>
+<span>6 Pendamping Siaga</span>
+</div>
+<div class="bg-primary-container/70 p-3.5 rounded-xl">
+<span class="font-label-sm text-label-sm text-white/60 block uppercase mb-1">Spesialisasi Dukungan</span>
+<p class="font-body-md text-body-md text-white/95">
+            Verifikasi metadata screenshot transaksi &amp; kawal formulir IASC OJK.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-3 mt-6 pt-2">
+<button class="flex-1 h-[48px] rounded-xl font-label-lg text-label-lg bg-tertiary-container text-on-surface flex items-center justify-center gap-2 hover:brightness-110 transition-all">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Chat Relawan</span>
+</button>
+<button class="flex-1 h-[48px] rounded-xl font-label-lg text-label-lg bg-primary-container text-on-surface flex items-center justify-center gap-2 hover:bg-primary-container/80 transition-all">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span>Telepon Pos</span>
+</button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col justify-between bg-secondary-container p-6 rounded-2xl relative overflow-hidden group hover:shadow-xl transition-all">
+<div class="flex flex-col gap-4">
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-center gap-3.5">
+<div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[26px]">psychology</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Biro Kesejahteraan Mhs</h2>
+<span class="font-body-sm text-body-sm text-white/70">Gedung Pelayanan Rektorat - Contoh</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-md font-label-sm text-label-sm uppercase bg-on-surface text-primary-container shrink-0">
+            08.00 - 20.00
+          </span>
+</div>
+<div class="flex items-center gap-2 font-label-md text-label-md text-tertiary">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<span>~3,8 km</span>
+<span class="text-white/40">•</span>
+<span class="material-symbols-outlined text-[18px]">group</span>
+<span>12 Pendamping Siaga</span>
+</div>
+<div class="bg-primary-container/70 p-3.5 rounded-xl">
+<span class="font-label-sm text-label-sm text-white/60 block uppercase mb-1">Spesialisasi Dukungan</span>
+<p class="font-body-md text-body-md text-white/95">
+            Mitigasi intimidasi pelaku, mediasi konseling &amp; stabilisasi psikologis.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-3 mt-6 pt-2">
+<button class="flex-1 h-[48px] rounded-xl font-label-lg text-label-lg bg-tertiary-container text-on-surface flex items-center justify-center gap-2 hover:brightness-110 transition-all">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Chat Relawan</span>
+</button>
+<button class="flex-1 h-[48px] rounded-xl font-label-lg text-label-lg bg-primary-container text-on-surface flex items-center justify-center gap-2 hover:bg-primary-container/80 transition-all">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span>Telepon Pos</span>
+</button>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="flex flex-col justify-between bg-secondary-container p-6 rounded-2xl relative overflow-hidden group hover:shadow-xl transition-all">
+<div class="flex flex-col gap-4">
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-center gap-3.5">
+<div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[26px]">terminal</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-tight">UKM Komputasi &amp; Siber</h2>
+<span class="font-body-sm text-body-sm text-white/70">Lab Riset Gedung C - Contoh</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-md font-label-sm text-label-sm uppercase bg-on-surface text-primary-container shrink-0">
+            08.00 - 20.00
+          </span>
+</div>
+<div class="flex items-center gap-2 font-label-md text-label-md text-tertiary">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<span>~4,1 km</span>
+<span class="text-white/40">•</span>
+<span class="material-symbols-outlined text-[18px]">group</span>
+<span>5 Pendamping Siaga</span>
+</div>
+<div class="bg-primary-container/70 p-3.5 rounded-xl">
+<span class="font-label-sm text-label-sm text-white/60 block uppercase mb-1">Spesialisasi Dukungan</span>
+<p class="font-body-md text-body-md text-white/95">
+            Pemeriksaan phishing perbankan &amp; sanitasi file APK/ekstensi fiktif.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-3 mt-6 pt-2">
+<button class="flex-1 h-[48px] rounded-xl font-label-lg text-label-lg bg-tertiary-container text-on-surface flex items-center justify-center gap-2 hover:brightness-110 transition-all">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Chat Relawan</span>
+</button>
+<button class="flex-1 h-[48px] rounded-xl font-label-lg text-label-lg bg-primary-container text-on-surface flex items-center justify-center gap-2 hover:bg-primary-container/80 transition-all">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span>Telepon Pos</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Volunteer Field Action & Training Call to Action Banner -->
+<section class="mt-12 bg-secondary-container/90 rounded-2xl p-8 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+<div class="flex items-center gap-5 max-w-2xl">
+<div class="w-16 h-16 rounded-2xl bg-tertiary-container text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[36px]">campaign</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Solidaritas Bela Negara</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Ingin Jadi Pendamping Sebaya?</h3>
+<p class="font-body-sm text-body-sm text-white/80">
+          Ikuti pelatihan simulasi penanganan 60 menit Bela Negara Siber dan dapatkan sertifikasi kompetensi relawan darurat.
+        </p>
+</div>
+</div>
+<a class="h-[52px] px-8 rounded-xl font-label-lg text-label-lg bg-on-surface text-primary-container flex items-center justify-center shrink-0 hover:bg-white transition-all shadow-md" href="#">
+      Daftar Pelatihan
+    </a>
+</section>
+<!-- Code of Conduct / Ethics Section -->
+<section class="mt-14 flex flex-col gap-6">
+<div class="flex flex-col gap-2 max-w-3xl">
+<div class="inline-flex items-center gap-2 self-start bg-secondary-container px-3 py-1 rounded-md text-on-surface font-label-sm text-label-sm uppercase tracking-wider">
+        KODE ETIK &amp; BATASAN MANDAT
+      </div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Apa yang boleh dan tidak boleh dilakukan pendamping</h2>
+<p class="font-body-md text-body-md text-white/80">
+        Seluruh pendamping memegang sumpah kerahasiaan data dan perlindungan korban.
+      </p>
+</div>
+<!-- Comparative 2-Column Layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-2">
+<!-- Left Column: YANG BOLEH DILAKUKAN -->
+<div class="bg-secondary-container p-6 rounded-2xl flex flex-col gap-5">
+<div class="flex items-center gap-3 pb-3">
+<div class="w-9 h-9 rounded-lg bg-tertiary-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block">YANG BOLEH DILAKUKAN</span>
+<span class="font-label-sm text-label-sm text-tertiary">Mandat resmi pendampingan sebaya</span>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex items-start gap-3.5 bg-primary-container/60 p-3.5 rounded-xl">
+<span class="material-symbols-outlined text-tertiary text-[20px] shrink-0 mt-0.5">check</span>
+<p class="font-body-sm text-body-sm text-white/95">
+              Memandu pengisian laporan kronologi resmi pada formulir portal anti-fraud IASC OJK.
+            </p>
+</div>
+<div class="flex items-start gap-3.5 bg-primary-container/60 p-3.5 rounded-xl">
+<span class="material-symbols-outlined text-tertiary text-[20px] shrink-0 mt-0.5">check</span>
+<p class="font-body-sm text-body-sm text-white/95">
+              Menemani dan mendampingi korban saat berbicara via call center resmi bank terkait.
+            </p>
+</div>
+<div class="flex items-start gap-3.5 bg-primary-container/60 p-3.5 rounded-xl">
+<span class="material-symbols-outlined text-tertiary text-[20px] shrink-0 mt-0.5">check</span>
+<p class="font-body-sm text-body-sm text-white/95">
+              Mengingatkan dan membantu merapikan bukti digital (tangkapan layar chat dan log mutasi).
+            </p>
+</div>
+<div class="flex items-start gap-3.5 bg-primary-container/60 p-3.5 rounded-xl">
+<span class="material-symbols-outlined text-tertiary text-[20px] shrink-0 mt-0.5">check</span>
+<p class="font-body-sm text-body-sm text-white/95">
+              Memberikan de-eskalasi kepanikan dan rasa aman psikologis secara empatik.
+            </p>
+</div>
+</div>
+</div>
+<!-- Right Column: TIDAK BOLEH DILAKUKAN -->
+<div class="bg-secondary-container p-6 rounded-2xl flex flex-col gap-5">
+<div class="flex items-center gap-3 pb-3">
+<div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[20px]">cancel</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block">TIDAK BOLEH DILAKUKAN</span>
+<span class="font-label-sm text-label-sm text-error">Larangan mutlak tanpa pengecualian</span>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex items-start gap-3.5 bg-primary-container/60 p-3.5 rounded-xl">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">close</span>
+<p class="font-body-sm text-body-sm text-white/95">
+              Memegang atau menerima titipan uang atau dana pengembalian apapun.
+            </p>
+</div>
+<div class="flex items-start gap-3.5 bg-primary-container/60 p-3.5 rounded-xl">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">close</span>
+<p class="font-body-sm text-body-sm text-white/95">
+              Meminta kata sandi, PIN ATM, nomor CVV/CVC kartu, atau kode OTP.
+            </p>
+</div>
+<div class="flex items-start gap-3.5 bg-primary-container/60 p-3.5 rounded-xl">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">close</span>
+<p class="font-body-sm text-body-sm text-white/95">
+              Menyimpan atau menyebarkan dokumen KTP, kartu mahasiswa, atau foto pribadi korban.
+            </p>
+</div>
+<div class="flex items-start gap-3.5 bg-primary-container/60 p-3.5 rounded-xl">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">close</span>
+<p class="font-body-sm text-body-sm text-white/95">
+              Mengambil alih perangkat korban atau login ke akun perbankan / dompet digital korban.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Regulatory Compliance Banner & Disclaimer -->
+<section class="mt-14 mb-4 flex flex-col gap-4">
+<div class="bg-primary-container/90 rounded-2xl p-6 flex flex-col md:flex-row items-start md:items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-secondary-container flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[24px]">gavel</span>
+</div>
+<div class="flex flex-col gap-1 text-left">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">KEPATUHAN REGULASI &amp; PRIVASI</span>
+<p class="font-body-sm text-body-sm text-white/80">
+          SIGAP 60 hanya memandu. Keputusan pemblokiran rekening sepenuhnya kewenangan pihak perbankan dan OJK. Seluruh pendamping mematuhi mandat UU Pelindungan Data Pribadi (UU PDP No. 27/2022).
+        </p>
+</div>
+</div>
+<!-- Metadata Badge Line -->
+<div class="flex flex-wrap items-center justify-center gap-4 text-center py-2 text-white/60 font-body-sm text-body-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-on-surface">info</span>
+<span>Bukan situs resmi OJK / IASC</span>
+</div>
+<span>•</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">flag</span>
+<span>Inisiatif Bela Negara Siber</span>
+</div>
+</div>
+</section>
+</div></main>
+<!-- Footer -->
+<footer class="w-full bg-[#000B58] border-t border-[#003161]/60 py-8">
+<div class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+<!-- Legal disclaimer requested -->
+<p class="text-xs text-white/80">
+        SIGAP 60 hanya memandu. Keputusan pemblokiran ada di bank dan OJK.
+      </p>
+<!-- Mandatory note requested -->
+<p class="text-xs text-[#FFF4B7]/80">
+        Bukan situs resmi OJK/IASC.
+      </p>
+</div>
+</footer>
+</body></html>

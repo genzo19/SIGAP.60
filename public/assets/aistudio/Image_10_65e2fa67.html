@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Beranda - SIGAP 60</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#000B58',
+            darkblue: '#003161',
+            teal: '#006A67',
+            cream: '#FFF4B7',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      background-color: #000B58;
+      color: #FFFFFF;
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+<meta content="web_standard" name="shell-type"/></head>
+<body class="min-h-screen bg-[#000B58] text-white flex flex-col justify-between selection:bg-[#006A67] selection:text-[#FFF4B7]">
+<!-- Top Navigation Bar (Strict Palette & Clean Line Layout) -->
+<header class="w-full bg-[#000B58] border-b border-[#003161]/60 sticky top-0 z-50">
+<div class="max-w-[1200px] mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-[#003161] border border-[#006A67] flex items-center justify-center text-[#FFF4B7]">
+<!-- Shield with Clock Line Icon -->
+<svg class="w-5 h-5 text-[#FFF4B7]" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M12 8v4l2.5 2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div>
+<span class="text-xl font-bold tracking-tight text-[#FFF4B7]">SIGAP 60</span>
+</div>
+</div>
+<!-- Menu Links -->
+<nav class="flex items-center gap-8">
+<a class="text-[#FFF4B7] font-semibold text-sm border-b-2 border-[#FFF4B7] pb-1 transition-colors" href="#">Beranda</a>
+<a class="text-white/80 hover:text-[#FFF4B7] font-medium text-sm transition-colors" href="#">Protokol</a>
+<a class="text-white/80 hover:text-[#FFF4B7] font-medium text-sm transition-colors" href="#">Pos</a>
+<a class="text-white/80 hover:text-[#FFF4B7] font-medium text-sm transition-colors" href="#">Latihan</a>
+<a class="text-white/80 hover:text-[#FFF4B7] font-medium text-sm transition-colors" href="#">Data</a>
+</nav>
+</div>
+</header>
+<!-- Main Content Area (Max width 1200px, 12-column grid layout) -->
+<main class="w-full max-w-[1200px] mx-auto px-6 py-12 flex-1 flex flex-col gap-14"><div class="flex flex-col w-full">
+<!-- Persistent Simulation Badge -->
+<div class="w-full bg-[#FFF4B7] text-[#000B58] px-6 py-2.5 rounded-xl shadow-md flex items-center justify-between mb-8">
+<div class="flex items-center gap-3">
+<span class="flex items-center justify-center w-7 h-7 rounded-lg bg-[#000B58] text-[#FFF4B7] font-bold text-xs">
+        🛡️
+      </span>
+<div>
+<span class="font-headline-sm text-headline-sm tracking-tight uppercase">SIMULASI — BUKAN LAYANAN RESMI</span>
+<span class="hidden md:inline text-body-sm font-body-sm ml-2 font-medium opacity-90">| Latihan kesiapsiagaan siber mandiri sivitas akademika</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-[#006A67] animate-pulse"></span>
+<span class="font-label-sm text-label-sm tracking-wider uppercase font-extrabold text-[#000B58]">Siaga Mahasiswa Aktif</span>
+</div>
+</div>
+<!-- Header Section with Golden 60 Pill & Refined Hierarchy -->
+<div class="flex flex-col gap-4 mb-10">
+<div class="flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<h1 class="text-headline-lg font-headline-lg text-[#FFF4B7] tracking-tight">Drill Refleks Tanggap Cepat</h1>
+<span class="bg-[#006A67] text-[#FFF4B7] font-label-lg text-label-lg px-3 py-1 rounded-full uppercase tracking-wider">
+          GOLDEN 60
+        </span>
+</div>
+<div class="flex items-center gap-2 bg-[#003161] px-4 py-2 rounded-xl text-body-sm font-body-sm text-[#FFF4B7]/90">
+<span class="material-symbols-outlined text-sm text-[#84d4d0]">timer</span>
+<span>Jam Pertama: <strong>00:54:18 Tersisa</strong></span>
+</div>
+</div>
+<p class="text-body-md font-body-md text-white/80 max-w-2xl">
+      Latih ketangkasan keputusan jam pertama sebelum saldo berpindah tangan atau sistem kliring perbankan mengunci perpindahan dana sindikat.
+    </p>
+<!-- 5 Horizontal Scenario Selector Chips -->
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mt-4">
+<!-- Active Scenario -->
+<button class="flex items-center justify-center gap-2.5 py-3 px-4 rounded-xl bg-[#006A67] text-[#FFF4B7] font-label-lg text-label-lg tracking-wide shadow-md transition-all scale-[1.02]">
+<span class="w-2 h-2 rounded-full bg-[#FFF4B7]"></span>
+<span>Belanja Online</span>
+</button>
+<!-- Inactive Scenarios -->
+<button class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#003161] text-white/70 hover:text-[#FFF4B7] hover:bg-[#003161]/80 font-label-lg text-label-lg tracking-wide transition-colors">
+<span>Impersonasi</span>
+</button>
+<button class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#003161] text-white/70 hover:text-[#FFF4B7] hover:bg-[#003161]/80 font-label-lg text-label-lg tracking-wide transition-colors">
+<span>Investasi</span>
+</button>
+<button class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#003161] text-white/70 hover:text-[#FFF4B7] hover:bg-[#003161]/80 font-label-lg text-label-lg tracking-wide transition-colors">
+<span>Lowongan Kerja</span>
+</button>
+<button class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#003161] text-white/70 hover:text-[#FFF4B7] hover:bg-[#003161]/80 font-label-lg text-label-lg tracking-wide transition-colors">
+<span>Media Sosial</span>
+</button>
+</div>
+</div>
+<!-- Main Triage Grid (7 Col Scenario / 5 Col Educational Feedback) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- LEFT COLUMN: Scenario Simulation & Active Interaction (7 Columns) -->
+<section class="lg:col-span-7 flex flex-col gap-6">
+<!-- Interactive Timer Bar -->
+<div class="bg-[#003161] rounded-2xl p-5 shadow-lg flex flex-col gap-3">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2 text-[#FFF4B7] font-bold">
+<span class="material-symbols-outlined text-base">hourglass_top</span>
+<span>JAWAB DALAM 10 DETIK</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-[#FFF4B7] font-bold">06.2s</span>
+</div>
+<!-- Progress Bar Meter -->
+<div class="w-full h-3 bg-[#000B58] rounded-full overflow-hidden">
+<div class="h-full bg-[#006A67] rounded-full w-[62%] transition-all duration-300"></div>
+</div>
+</div>
+<!-- Simulated Scam Message Mockup -->
+<div class="bg-[#003161] rounded-2xl p-6 shadow-xl flex flex-col gap-4">
+<!-- Message Box Header -->
+<div class="flex items-center justify-between pb-3 bg-[#002447] px-4 py-3 rounded-xl">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-[#006A67] flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-lg">local_shipping</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-white font-bold">Ekspedisi Express Kilat [PALSU]</span>
+<span class="bg-red-500/20 text-red-300 text-label-sm font-label-sm px-1.5 py-0.5 rounded">Scam APK</span>
+</div>
+<span class="text-label-md font-label-md text-white/60">+62 812-9981-XXXX • WhatsApp Official Phishing Mock</span>
+</div>
+</div>
+<span class="text-label-md font-label-md text-white/50">14:02</span>
+</div>
+<!-- Chat Bubble Content -->
+<div class="bg-[#000B58] p-5 rounded-2xl flex flex-col gap-3">
+<p class="text-body-md font-body-md text-white/95 leading-relaxed">
+            “Paket Anda tertahan di gudang transit regional. Klik tautan <span class="text-[#84d4d0] underline font-mono">cekresi-ongkir-bayar.apk</span> untuk membayar biaya pelunasan ongkir Rp 15.000 agar paket segera dikirim sore ini.”
+          </p>
+<div class="flex items-center justify-end gap-1.5 text-label-sm font-label-sm text-[#84d4d0]">
+<span>Terkirim otomatis</span>
+<span class="material-symbols-outlined text-sm font-bold">done_all</span>
+</div>
+</div>
+</div>
+<!-- Decision Prompt & Dynamic Choices -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2 px-1">
+<span class="text-headline-sm font-headline-sm text-[#FFF4B7]">❓</span>
+<h2 class="text-headline-sm font-headline-sm text-[#FFF4B7] font-semibold">
+            Kamu baru sadar sudah transfer. Apa langkah pertamamu?
+          </h2>
+</div>
+<!-- Answer Options Group -->
+<div class="grid grid-cols-1 gap-3.5">
+<!-- Option A (Correct / Selected) -->
+<div class="flex items-center justify-between p-4 rounded-xl bg-[#006A67] text-[#FFF4B7] shadow-md transition cursor-pointer">
+<div class="flex items-center gap-3.5">
+<span class="w-8 h-8 rounded-lg bg-[#000B58] text-[#FFF4B7] font-bold flex items-center justify-center font-label-lg text-label-lg shadow-sm">
+                A
+              </span>
+<span class="font-headline-sm text-headline-sm font-semibold text-white">
+                Hubungi bank untuk meminta penundaan transaksi
+              </span>
+</div>
+<div class="flex items-center gap-2 bg-[#000B58]/40 px-3 py-1 rounded-lg">
+<span class="material-symbols-outlined text-base text-[#FFF4B7]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-sm text-label-sm uppercase font-bold text-[#FFF4B7]">Pilihan Refleks</span>
+</div>
+</div>
+<!-- Option B -->
+<div class="flex items-center justify-between p-4 rounded-xl bg-[#003161] text-white/80 hover:bg-[#003161]/80 hover:text-white transition cursor-pointer">
+<div class="flex items-center gap-3.5">
+<span class="w-8 h-8 rounded-lg bg-[#000B58] text-white/60 font-bold flex items-center justify-center font-label-lg text-label-lg">
+                B
+              </span>
+<span class="font-body-md font-body-md font-medium">
+                Tutup aplikasi dan pasrah menunggu paket datang
+              </span>
+</div>
+<span class="text-label-sm font-label-sm opacity-40">Tidak efektif</span>
+</div>
+<!-- Option C -->
+<div class="flex items-center justify-between p-4 rounded-xl bg-[#003161] text-white/80 hover:bg-[#003161]/80 hover:text-white transition cursor-pointer">
+<div class="flex items-center gap-3.5">
+<span class="w-8 h-8 rounded-lg bg-[#000B58] text-white/60 font-bold flex items-center justify-center font-label-lg text-label-lg">
+                C
+              </span>
+<span class="font-body-md font-body-md font-medium">
+                Kirim pesan marah ke nomor WhatsApp penipu
+              </span>
+</div>
+<span class="text-label-sm font-label-sm opacity-40">Risiko blokir kontak</span>
+</div>
+<!-- Option D -->
+<div class="flex items-center justify-between p-4 rounded-xl bg-[#003161] text-white/80 hover:bg-[#003161]/80 hover:text-white transition cursor-pointer">
+<div class="flex items-center gap-3.5">
+<span class="w-8 h-8 rounded-lg bg-[#000B58] text-white/60 font-bold flex items-center justify-center font-label-lg text-label-lg">
+                D
+              </span>
+<span class="font-body-md font-body-md font-medium">
+                Buat postingan keluhan di media sosial tanpa hubungi bank
+              </span>
+</div>
+<span class="text-label-sm font-label-sm opacity-40">Membuang waktu emas</span>
+</div>
+</div>
+</div>
+</section>
+<!-- RIGHT COLUMN: Instant Feedback & Operational Context (5 Columns) -->
+<aside class="lg:col-span-5 flex flex-col gap-6">
+<!-- Primary Result Feedback Card (Cream Container with Deep Navy Contrast) -->
+<div class="bg-[#FFF4B7] text-[#000B58] rounded-2xl p-6 shadow-xl flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-2xl text-[#006A67]" style="font-variation-settings: 'FILL' 1;">
+              verified_user
+            </span>
+<span class="font-headline-md text-headline-md font-extrabold tracking-tight">
+              Tepat! Waktu respons: 6 detik
+            </span>
+</div>
+<span class="bg-[#000B58] text-[#FFF4B7] font-label-sm text-label-sm px-2.5 py-1 rounded-md uppercase tracking-wider font-bold">
+            REFLEKS SIAGA
+          </span>
+</div>
+<p class="font-body-md text-body-md leading-relaxed text-[#000B58]/95 font-medium">
+<strong>Golden Hour (60 Menit Pertama)</strong> adalah jendela krusial sebelum sistem kliring antarbank memindahkan saldo secara tuntas atau sebelum dana ditarik tunai oleh sindikat penipuan di ATM. Menghubungi call center resmi bank untuk freeze rekening tujuan adalah prioritas nomor 1 sebelum lapor pihak lain.
+        </p>
+<!-- Peer Incident Note -->
+<div class="bg-[#000B58]/10 p-3.5 rounded-xl flex items-center gap-3 mt-1">
+<span class="material-symbols-outlined text-lg text-[#006A67]">support_agent</span>
+<span class="text-body-sm font-body-sm text-[#000B58] font-semibold">
+            Tindakan cepat ini menyelamatkan potensi pemulihan dana hingga 84%.
+          </span>
+</div>
+</div>
+<!-- Drill Progress & Metrics Card -->
+<div class="bg-[#003161] rounded-2xl p-6 shadow-lg flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-[#84d4d0]">Status Latihan</span>
+<span class="font-headline-sm text-headline-sm text-[#FFF4B7]">Latihan 3 dari 5</span>
+</div>
+<span class="text-headline-md font-headline-md text-[#FFF4B7] font-extrabold">60%</span>
+</div>
+<!-- Segmented 5-Step Bar -->
+<div class="grid grid-cols-5 gap-2 w-full">
+<div class="h-2 rounded bg-[#006A67]"></div>
+<div class="h-2 rounded bg-[#006A67]"></div>
+<div class="h-2 rounded bg-[#FFF4B7]"></div>
+<div class="h-2 rounded bg-[#000B58]"></div>
+<div class="h-2 rounded bg-[#000B58]"></div>
+</div>
+<!-- Quick Stats Matrix -->
+<div class="grid grid-cols-2 gap-3 pt-2">
+<div class="bg-[#000B58] p-3.5 rounded-xl flex flex-col gap-1">
+<span class="text-label-sm font-label-sm text-white/60">Akurasi Refleks</span>
+<span class="text-headline-sm font-headline-sm text-[#FFF4B7] font-bold">100%</span>
+</div>
+<div class="bg-[#000B58] p-3.5 rounded-xl flex flex-col gap-1">
+<span class="text-label-sm font-label-sm text-white/60">Rata-rata Respon</span>
+<span class="text-headline-sm font-headline-sm text-[#84d4d0] font-bold">5.8s</span>
+</div>
+</div>
+<!-- Primary CTA Trigger -->
+<button class="w-full bg-[#006A67] hover:bg-[#006A67]/80 text-[#FFF4B7] font-headline-sm text-headline-sm font-bold py-4 px-6 rounded-xl shadow-lg flex items-center justify-center gap-3 transition">
+<span>Latihan Berikutnya</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+<!-- Campus Peer Incident Alert / Notice Box -->
+<div class="bg-[#003161]/60 rounded-2xl p-5 flex items-start gap-3.5 shadow-sm">
+<span class="material-symbols-outlined text-xl text-[#FFF4B7] mt-0.5">info</span>
+<div class="flex flex-col gap-1">
+<span class="text-label-lg font-label-lg text-[#FFF4B7]">Pedoman Triage Mandiri</span>
+<p class="text-body-sm font-body-sm text-white/70 leading-normal">
+            SIGAP 60 hanya platform simulasi edukatif. Penanganan insiden riil wajib merujuk kontak perbankan resmi dan kanal aduan IASC OJK.
+          </p>
+</div>
+</div>
+</aside>
+</div>
+<!-- In-Flow Micro Footer Statement for Bela Negara Solidaritas -->
+<div class="mt-14 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-label-md font-label-md text-white/50">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-[#FFF4B7]">shield</span>
+<span>Inisiatif Solidaritas &amp; Bela Negara Digital Antar-Mahasiswa</span>
+</div>
+<span>© 2025 SIGAP 60 Civic Response. Terhubung Jaringan Posko Kampus.</span>
+</div>
+</div></main>
+<!-- Footer -->
+<footer class="w-full bg-[#000B58] border-t border-[#003161]/60 py-8">
+<div class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+<!-- Legal disclaimer requested -->
+<p class="text-xs text-white/80">
+        SIGAP 60 hanya memandu. Keputusan pemblokiran ada di bank dan OJK.
+      </p>
+<!-- Mandatory note requested -->
+<p class="text-xs text-[#FFF4B7]/80">
+        Bukan situs resmi OJK/IASC.
+      </p>
+</div>
+</footer>
+</body></html>

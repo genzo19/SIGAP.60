@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Beranda - SIGAP 60</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#000B58',
+            darkblue: '#003161',
+            teal: '#006A67',
+            cream: '#FFF4B7',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      background-color: #000B58;
+      color: #FFFFFF;
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+<meta content="web_standard" name="shell-type"/></head>
+<body class="min-h-screen bg-[#000B58] text-white flex flex-col justify-between selection:bg-[#006A67] selection:text-[#FFF4B7]">
+<!-- Top Navigation Bar (Strict Palette & Clean Line Layout) -->
+<header class="w-full bg-[#000B58] border-b border-[#003161]/60 sticky top-0 z-50">
+<div class="max-w-[1200px] mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-[#003161] border border-[#006A67] flex items-center justify-center text-[#FFF4B7]">
+<!-- Shield with Clock Line Icon -->
+<svg class="w-5 h-5 text-[#FFF4B7]" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M12 8v4l2.5 2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div>
+<span class="text-xl font-bold tracking-tight text-[#FFF4B7]">SIGAP 60</span>
+</div>
+</div>
+<!-- Menu Links -->
+<nav class="flex items-center gap-8">
+<a class="text-[#FFF4B7] font-semibold text-sm border-b-2 border-[#FFF4B7] pb-1 transition-colors" href="#">Beranda</a>
+<a class="text-white/80 hover:text-[#FFF4B7] font-medium text-sm transition-colors" href="#">Protokol</a>
+<a class="text-white/80 hover:text-[#FFF4B7] font-medium text-sm transition-colors" href="#">Pos</a>
+<a class="text-white/80 hover:text-[#FFF4B7] font-medium text-sm transition-colors" href="#">Latihan</a>
+<a class="text-white/80 hover:text-[#FFF4B7] font-medium text-sm transition-colors" href="#">Data</a>
+</nav>
+</div>
+</header>
+<!-- Main Content Area (Max width 1200px, 12-column grid layout) -->
+<main class="w-full max-w-[1200px] mx-auto px-6 py-12 flex-1 flex flex-col gap-14"><div class="flex flex-col w-full">
+<!-- Interactive & Tactical Data View -->
+<div class="flex flex-col gap-10">
+<!-- Section 1: Header & Tactical Indicators -->
+<header class="flex flex-col gap-5">
+<div class="flex flex-wrap items-center gap-3">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-base">emergency_home</span>
+          URGENSI GOLDEN HOUR
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-container text-tertiary font-label-md text-label-md">
+<span class="material-symbols-outlined text-base">verified</span>
+          DATA RISET &amp; REGULASI NASIONAL
+        </span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+<div class="flex flex-col gap-2 max-w-3xl">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+            Mengapa 60 Menit?
+          </h1>
+<p class="font-body-lg text-body-lg text-secondary">
+            Data resmi IASC OJK &amp; Satgas PASTI (2024–2026) membuktikan urgensi respons jam pertama pasca transaksi penipuan rekayasa sosial.
+          </p>
+</div>
+<!-- Latency Badges -->
+<div class="flex flex-wrap lg:flex-col items-start lg:items-end gap-2.5">
+<div class="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-md text-label-md tracking-wider">LATENSI PENYELAMATAN ASET</span>
+</div>
+<div class="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-secondary-container text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-base text-tertiary">timer</span>
+<span>TINGKAT KRITIS: JAM PERTAMA PASCA-TRANSFER</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Section 2: Top Row / Primary Analytic Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+<!-- Card 1 (Left 7 Cols): Cumulative Growth Line Chart -->
+<div class="lg:col-span-7 flex flex-col justify-between p-6 sm:p-8 rounded-2xl bg-secondary-container shadow-xl">
+<div class="flex flex-col gap-4">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-xl">monitoring</span>
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant">Eskalasi Pengaduan Digital</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1">
+                Pertumbuhan Kumulatif Laporan IASC
+              </h2>
+</div>
+<div class="self-start px-3.5 py-1.5 rounded-xl bg-on-surface text-primary-container font-label-md text-label-md shadow-md">
+              PUNCAK: 636.014 Laporan (Jul 2026)
+            </div>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+            Satgas PASTI &amp; IASC OJK mencatat lonjakan lebih dari 34x lipat dalam kurun 19 bulan operasional.
+          </p>
+<!-- SVG Visualized Chart Container -->
+<div class="w-full mt-4 p-4 rounded-xl bg-primary-container">
+<div class="w-full relative">
+<svg class="w-full h-auto overflow-visible" preserveaspectratio="none" viewbox="0 0 700 240">
+<defs>
+<lineargradient id="chartGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#84d4d0" stop-opacity="0.35"></stop>
+<stop offset="100%" stop-color="#84d4d0" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Horizontal Reference Gridlines -->
+<line stroke="#214778" stroke-dasharray="4 4" stroke-width="1" x1="45" x2="685" y1="20" y2="20"></line>
+<text class="font-mono" fill="#a7c8ff" font-size="10" text-anchor="end" x="40" y="24">600k</text>
+<line stroke="#214778" stroke-dasharray="4 4" stroke-width="1" x1="45" x2="685" y1="80" y2="80"></line>
+<text class="font-mono" fill="#a7c8ff" font-size="10" text-anchor="end" x="40" y="84">400k</text>
+<line stroke="#214778" stroke-dasharray="4 4" stroke-width="1" x1="45" x2="685" y1="140" y2="140"></line>
+<text class="font-mono" fill="#a7c8ff" font-size="10" text-anchor="end" x="40" y="144">200k</text>
+<line stroke="#214778" stroke-width="1" x1="45" x2="685" y1="200" y2="200"></line>
+<text class="font-mono" fill="#a7c8ff" font-size="10" text-anchor="end" x="40" y="204">0</text>
+<!-- Area Fill -->
+<path d="M 65 194 L 175 182 L 285 160 L 400 75 L 515 36 L 640 10 L 640 200 L 65 200 Z" fill="url(#chartGradient)"></path>
+<!-- Glow Data Line -->
+<path d="M 65 194 L 175 182 L 285 160 L 400 75 L 515 36 L 640 10" fill="none" stroke="#84d4d0" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+<!-- Nodes & Visual Tags -->
+<!-- Point 1 -->
+<circle cx="65" cy="194" fill="#eee4a8" r="4" stroke="#000b58" stroke-width="2"></circle>
+<text fill="#a7c8ff" font-size="9" font-weight="600" text-anchor="middle" x="65" y="218">Des '24</text>
+<text fill="#eee4a8" font-size="9" text-anchor="middle" x="65" y="185">18.6k</text>
+<!-- Point 2 -->
+<circle cx="175" cy="182" fill="#eee4a8" r="4" stroke="#000b58" stroke-width="2"></circle>
+<text fill="#a7c8ff" font-size="9" font-weight="600" text-anchor="middle" x="175" y="218">Feb '25</text>
+<text fill="#eee4a8" font-size="9" text-anchor="middle" x="175" y="173">57.4k</text>
+<!-- Point 3 -->
+<circle cx="285" cy="160" fill="#eee4a8" r="4" stroke="#000b58" stroke-width="2"></circle>
+<text fill="#a7c8ff" font-size="9" font-weight="600" text-anchor="middle" x="285" y="218">Mei '25</text>
+<text fill="#eee4a8" font-size="9" text-anchor="middle" x="285" y="151">128.2k</text>
+<!-- Point 4 -->
+<circle cx="400" cy="75" fill="#eee4a8" r="5" stroke="#000b58" stroke-width="2.5"></circle>
+<text fill="#a7c8ff" font-size="9" font-weight="600" text-anchor="middle" x="400" y="218">Des '25</text>
+<text fill="#eee4a8" font-size="10" font-weight="700" text-anchor="middle" x="400" y="65">411.0k</text>
+<!-- Point 5 -->
+<circle cx="515" cy="36" fill="#eee4a8" r="4" stroke="#000b58" stroke-width="2"></circle>
+<text fill="#a7c8ff" font-size="9" font-weight="600" text-anchor="middle" x="515" y="218">Apr '26</text>
+<text fill="#eee4a8" font-size="9" text-anchor="middle" x="515" y="27">548.0k</text>
+<!-- Point 6 (Peak) -->
+<circle cx="640" cy="10" fill="#84d4d0" r="6" stroke="#eee4a8" stroke-width="2.5"></circle>
+<text fill="#a7c8ff" font-size="9" font-weight="600" text-anchor="middle" x="640" y="218">Jul '26</text>
+<text fill="#eee4a8" font-size="11" font-weight="800" text-anchor="end" x="640" y="-2">636.014</text>
+</svg>
+</div>
+</div>
+</div>
+<!-- Milestones Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6 pt-5 bg-surface-container-high/40 p-4 rounded-xl">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary text-2xl shrink-0">speed</span>
+<div>
+<div class="font-label-sm text-label-sm uppercase text-secondary">Awal Fase (Des 2024)</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">18.614 Laporan</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Penipuan manual bergeser ke bot telegram &amp; APK perbankan.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary text-2xl shrink-0">trending_up</span>
+<div>
+<div class="font-label-sm text-label-sm uppercase text-secondary">Akselerasi 1 Tahun (Des 2025)</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">411.055 Laporan</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Sindikat terorganisir mengeksekusi split transfer multi-layer.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2 (Right 5 Cols): Asset Rescue Ratio vs Loss -->
+<div class="lg:col-span-5 flex flex-col justify-between p-6 sm:p-8 rounded-2xl bg-secondary-container shadow-xl">
+<div class="flex flex-col gap-6">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-xl">account_balance</span>
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant">Statistik Pengembalian</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1">
+              Komparasi Penyelamatan Aset Korban
+            </h2>
+<p class="font-body-sm text-body-sm text-secondary mt-1">
+              Perbandingan efektivitas blokir rekening darurat versus nominal yang dapat dipulihkan pasca-kejadian.
+            </p>
+</div>
+<!-- Comparative Metrics Bars -->
+<div class="flex flex-col gap-5 p-5 rounded-xl bg-primary-container">
+<!-- Metric 1: Frozen -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface flex items-center gap-1.5">
+<span class="inline-block w-2.5 h-2.5 rounded-sm bg-tertiary"></span>
+                  Dana Berhasil Terblokir (IASC)
+                </span>
+<span class="font-headline-sm text-headline-sm text-tertiary">Rp 723,7 M</span>
+</div>
+<div class="w-full h-3 rounded-full bg-secondary-container overflow-hidden">
+<div class="h-full bg-tertiary rounded-full transition-all duration-700" style="width: 78%;"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-right">Mencakup pemblokiran cepat sistem perbankan terintegrasi</span>
+</div>
+<!-- Metric 2: Returned -->
+<div class="flex flex-col gap-2 pt-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface flex items-center gap-1.5">
+<span class="inline-block w-2.5 h-2.5 rounded-sm bg-on-surface"></span>
+                  Dana Berhasil Dikembalikan
+                </span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Rp 204,3 M</span>
+</div>
+<div class="w-full h-3 rounded-full bg-secondary-container overflow-hidden">
+<div class="h-full bg-on-surface rounded-full transition-all duration-700" style="width: 28.2%;"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span>Rasio Pemulihan: ~28,2% dari dana terblokir</span>
+<span class="text-on-surface font-bold">Selisih waktu kritis</span>
+</div>
+</div>
+</div>
+<!-- Total Damage High-Urgency Alert Box -->
+<div class="flex items-start gap-4 p-4 rounded-xl bg-error-container text-on-error-container">
+<span class="material-symbols-outlined text-3xl shrink-0 text-error">gpp_maybe</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-error">Total Kerugian Terlapor Nasional</span>
+<span class="font-headline-md text-headline-md font-bold text-on-error-container">
+                Rp 9,1 Triliun
+              </span>
+<span class="font-body-sm text-body-sm text-on-error-container/90 mt-0.5">
+                Data kompilasi s.d. 14 Januari 2026. Kurang dari 8% total kerugian berhasil diselamatkan jika laporan terlambat melebihi 2 jam.
+              </span>
+</div>
+</div>
+</div>
+<!-- Takeaway Footer Note -->
+<div class="mt-4 pt-3 flex items-center gap-2 font-label-md text-label-md text-tertiary">
+<span class="material-symbols-outlined text-base">info</span>
+<span>Setiap 1 menit percepatan laporan menyelamatkan potensi hingga puluhan juta rupiah.</span>
+</div>
+</div>
+</div>
+<!-- Section 3: Bottom Row / Tactical Insights & 60-Minute Breakdown -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+<!-- Left (5 Cols): High Contrast Cream Paradox Card -->
+<div class="lg:col-span-5 p-8 rounded-2xl bg-on-surface text-primary-container shadow-2xl flex flex-col justify-between">
+<div class="flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm">psychology_alt</span>
+              PARADOKS PENYELAMATAN
+            </span>
+<span class="material-symbols-outlined text-3xl opacity-30">format_quote</span>
+</div>
+<blockquote class="font-headline-md text-headline-md text-primary-container leading-tight">
+            “Sistem blokir sudah ada. Titik lemahnya ada di menit sebelum laporan masuk.”
+          </blockquote>
+<p class="font-body-md text-body-md text-primary-container/85 leading-relaxed">
+            Ketika panik, rata-rata mahasiswa kehilangan <strong>3 hingga 5 jam</strong> untuk curhat ke medsos, menghubungi teman yang salah, atau bingung mencari call center bank resmi. Padahal sindikat hanya butuh <strong>45 menit</strong> untuk menarik tunai saldo via rekening penampung berlapis secara terstruktur.
+          </p>
+</div>
+<div class="mt-8 pt-6 flex flex-col gap-3">
+<div class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-primary-container text-on-surface font-label-lg text-label-lg tracking-wide shadow-md">
+<span class="material-symbols-outlined text-lg">bolt</span>
+            MISI SIGAP 60: PANGKAS LATENSI LAPORAN
+          </div>
+<span class="text-center font-label-sm text-label-sm text-primary-container/70">
+            Protokol sivitas akademika untuk respons terukur detik per detik.
+          </span>
+</div>
+</div>
+<!-- Right (7 Cols): 3-Step 0-60 Min Triage Lifecycle -->
+<div class="lg:col-span-7 p-6 sm:p-8 rounded-2xl bg-secondary-container shadow-xl flex flex-col justify-between gap-6">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-xl">schedule</span>
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant">Anatomi Siklus Pengurasan</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1">
+            Mengapa Menit 0–60 Menentukan?
+          </h2>
+<p class="font-body-sm text-body-sm text-secondary mt-1">
+            Visualisasi fase perpindahan saldo ke rekening penampung tingkat 2 &amp; 3 sebelum dieksekusi mesin ATM luar negeri.
+          </p>
+</div>
+<!-- 3 Step Phase Cards -->
+<div class="flex flex-col gap-3.5">
+<!-- Step 1 -->
+<div class="p-4 sm:p-5 rounded-xl bg-primary-container flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-error-container text-on-error-container flex items-center justify-center font-headline-sm text-headline-sm shrink-0">
+                1
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Menit 00 – 15</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold uppercase tracking-wider bg-error-container text-on-error-container">
+                    Kritis
+                  </span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-1">
+                  Hubungi Call Center Resmi Bank penerbit untuk pembekuan seketika akun pengirim &amp; instruksi penahanan (hold) rekening tujuan.
+                </p>
+</div>
+</div>
+<div class="shrink-0 flex sm:flex-col items-center sm:items-end justify-between">
+<span class="text-xs font-mono text-tertiary">Layer 1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Akun Korban</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="p-4 sm:p-5 rounded-xl bg-primary-container flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-secondary-container text-on-surface flex items-center justify-center font-headline-sm text-headline-sm shrink-0">
+                2
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Menit 15 – 45</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold uppercase tracking-wider bg-secondary-container text-on-surface">
+                    Interbank
+                  </span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-1">
+                  Pengisian formulir cepat koordinasi IASC OJK (<span class="text-tertiary font-mono">iasc.ojk.go.id</span>) agar bank penerima membekukan rekening penampung perantara.
+                </p>
+</div>
+</div>
+<div class="shrink-0 flex sm:flex-col items-center sm:items-end justify-between">
+<span class="text-xs font-mono text-tertiary">Layer 2</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Penampung Mule</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="p-4 sm:p-5 rounded-xl bg-primary-container flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center font-headline-sm text-headline-sm shrink-0">
+                3
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Menit 45 – 60</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold uppercase tracking-wider bg-surface-container-high text-on-surface">
+                    Yuridis
+                  </span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-1">
+                  Amankan tangkapan layar mutasi, nomor rekening target, dan bukti chat sebelum dihapus sindikat untuk berkas kepolisian &amp; OJK 157.
+                </p>
+</div>
+</div>
+<div class="shrink-0 flex sm:flex-col items-center sm:items-end justify-between">
+<span class="text-xs font-mono text-tertiary">Layer 3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tarik Tunai / Kripto</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-high/40 text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-sm">lock_clock</span>
+            Setelah 60 menit: Sindikat mendiversifikasi dana ke aset tak terlacak.
+          </span>
+<span class="text-tertiary font-bold">Rasio ampas &lt;5%</span>
+</div>
+</div>
+</div>
+<!-- Section 4: Academic & Institutional Methodology Disclaimer -->
+<div class="p-6 rounded-2xl bg-secondary-container/60 flex flex-col gap-4 text-on-surface-variant">
+<div class="flex items-center gap-2 text-on-surface font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-tertiary">analytics</span>
+<span>METODOLOGI &amp; SUMBER DATA</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 font-body-sm text-body-sm leading-relaxed">
+<div class="flex flex-col gap-1">
+<span class="font-semibold text-on-surface">Sumber Primer</span>
+<p>
+            Otoritas Jasa Keuangan (OJK 2025–2026), Satgas PASTI, dan Asosiasi Penyelenggara Jasa Internet Indonesia (APJII 2025). Diolah mandiri untuk permodelan respons mahasiswa.
+          </p>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-semibold text-on-surface">Metode Estimasi</span>
+<p>
+            Rasio dihitung dari angka publikasi rilis per tanggal berbeda, dibaca sebagai estimasi empiris kecepatan transfer perbankan digital di Indonesia.
+          </p>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-semibold text-on-surface">Batasan Wewenang</span>
+<p>
+            SIGAP 60 memandu alur mitigasi kepanikan sivitas akademika. Wewenang hukum eksekusi pemblokiran rekening sepenuhnya berada pada Bank Penerbit dan Regulator Terkait.
+          </p>
+</div>
+</div>
+<div class="pt-4 flex flex-col sm:flex-row items-center justify-between gap-3 font-label-sm text-label-sm text-secondary">
+<div>
+          © 2025 SIGAP 60 Civic Response. Terhubung Jaringan Posko Relawan Kampus.
+        </div>
+<div class="flex items-center gap-4">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">shield</span>
+            Bela Negara Digital
+          </span>
+<span>•</span>
+<span>Integritas Kampus Bebas Penipuan</span>
+</div>
+</div>
+</div>
+</div>
+</div></main>
+<!-- Footer -->
+<footer class="w-full bg-[#000B58] border-t border-[#003161]/60 py-8">
+<div class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+<!-- Legal disclaimer requested -->
+<p class="text-xs text-white/80">
+        SIGAP 60 hanya memandu. Keputusan pemblokiran ada di bank dan OJK.
+      </p>
+<!-- Mandatory note requested -->
+<p class="text-xs text-[#FFF4B7]/80">
+        Bukan situs resmi OJK/IASC.
+      </p>
+</div>
+</footer>
+</body></html>
