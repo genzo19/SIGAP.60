@@ -1,4 +1,5 @@
 export type PageType = 
+  | 'login'
   | 'beranda' 
   | 'protokol' 
   | 'pos' 
@@ -6,6 +7,15 @@ export type PageType =
   | 'latihan' 
   | 'data' 
   | 'dasbor';
+
+export interface UserProfile {
+  id: string;
+  name: string;
+  role: string;
+  campusNode: string;
+  authMethod: 'biometric-fingerprint';
+  authTime: string;
+}
 
 export interface IncidentLog {
   id: string;

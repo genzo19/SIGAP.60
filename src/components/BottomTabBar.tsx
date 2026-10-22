@@ -3,7 +3,7 @@ import { useApp } from '../context/AppContext';
 import { PageType } from '../types';
 
 export const BottomTabBar: React.FC = () => {
-  const { currentPage, setCurrentPage } = useApp();
+  const { currentPage, setCurrentPage, isAuthenticated } = useApp();
 
   const tabs: { key: PageType; label: string; icon: string }[] = [
     { key: 'beranda', label: 'Beranda', icon: 'home' },
@@ -28,15 +28,17 @@ export const BottomTabBar: React.FC = () => {
                 setCurrentPage(tab.key);
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
-              className={`flex-1 flex flex-col items-center justify-center min-h-[48px] py-1 rounded-xl transition-all cursor-pointer ${
+              className={`flex-1 flex flex-col items-center justify-center min-h-[48px] py-1 rounded-xl transition-all cursor-pointer relative ${
                 isActive
                   ? 'text-[#FFF4B7] font-bold'
-                  : 'text-white/60 hover:text-white/80'
+                  : isAuthenticated
+                  ? 'text-white/60 hover:text-white/90'
+                  : 'text-white/40 hover:text-white/70'
               }`}
               aria-current={isActive ? 'page' : undefined}
             >
               <div
-                className={`w-9 h-7 flex items-center justify-center rounded-full transition-colors ${
+                className={`w-9 h-7 flex items-center justify-center rounded-full transition-colors relative ${
                   isActive ? 'bg-[#003161] text-[#FFF4B7]' : ''
                 }`}
               >
@@ -46,6 +48,13 @@ export const BottomTabBar: React.FC = () => {
                 >
                   {tab.icon}
                 </span>
+
+                {/* Small padlock indicator when not logged in */}
+                {!isAuthenticated && (
+                  <span className="absolute -top-1 -right-1 w-3.5 h-3.5 bg-[#003161] border border-[#006A67] rounded-full flex items-center justify-center text-[9px] text-[#FFF4B7]">
+                    <span className="material-symbols-outlined text-[10px]">lock</span>
+                  </span>
+                )}
               </div>
               <span
                 className={`text-[10px] mt-0.5 tracking-tight ${

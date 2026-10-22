@@ -1,9 +1,16 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { PageType, IncidentLog } from '../types';
+import { PageType, IncidentLog, UserProfile } from '../types';
 
 interface AppContextType {
   currentPage: PageType;
   setCurrentPage: (page: PageType) => void;
+  // Authentication & Fingerprint state
+  isAuthenticated: boolean;
+  currentUser: UserProfile | null;
+  loginWithFingerprint: () => void;
+  logout: () => void;
+  authPromptMessage: string | null;
+  clearAuthPrompt: () => void;
   // Timer state
   timerActive: boolean;
   secondsLeft: number;
@@ -100,7 +107,46 @@ const initialIncidentLogs: IncidentLog[] = [
 ];
 
 export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [currentPage, setCurrentPage] = useState<PageType>('beranda');
+  // Authentication & Fingerprint state
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
+  const [currentUser, setCurrentUser] = useState<UserProfile | null>(null);
+  const [authPromptMessage, setAuthPromptMessage] = useState<string | null>(null);
+  const [currentPage, setCurrentPageRaw] = useState<PageType>('login');
+
+  const setCurrentPage = (page: PageType) => {
+    if (!isAuthenticated && page !== 'login') {
+      setAuthPromptMessage('Autentikasi sidik jari diperlukan untuk membuka menu ini.');
+      setCurrentPageRaw('login');
+      return;
+    }
+    setAuthPromptMessage(null);
+    setCurrentPageRaw(page);
+  };
+
+  const loginWithFingerprint = () => {
+    setIsAuthenticated(true);
+    setCurrentUser({
+      id: 'REL-SGP-60',
+      name: 'Relawan Sebaya Kampus',
+      role: 'Pendamping Darurat Terverifikasi',
+      campusNode: 'Posko Wilayah 1',
+      authMethod: 'biometric-fingerprint',
+      authTime: new Date().toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' }),
+    });
+    setAuthPromptMessage(null);
+    setCurrentPageRaw('beranda');
+  };
+
+  const logout = () => {
+    setIsAuthenticated(false);
+    setCurrentUser(null);
+    setAuthPromptMessage(null);
+    setCurrentPageRaw('login');
+  };
+
+  const clearAuthPrompt = () => {
+    setAuthPromptMessage(null);
+  };
   
   // Timer state (persists across pages!)
   const [timerActive, setTimerActive] = useState<boolean>(false);
@@ -227,6 +273,12 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       value={{
         currentPage,
         setCurrentPage,
+        isAuthenticated,
+        currentUser,
+        loginWithFingerprint,
+        logout,
+        authPromptMessage,
+        clearAuthPrompt,
         timerActive,
         secondsLeft,
         startEmergencyTimer,
